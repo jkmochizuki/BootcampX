@@ -1,6 +1,6 @@
 CREATE TABLE assignments (
   id SERIAL PRIMARY KEY NOT NULL,
-  name VARCHAR(255),
+  name VARCHAR(500),
   content TEXT,
   day INTEGER,
   chapter INTEGER,
