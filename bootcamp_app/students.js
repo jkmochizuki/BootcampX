@@ -7,17 +7,6 @@ const pool = new Pool({
   database: 'bootcampx'
 });
 
-// Print the first 5 rows from the database
-// pool.query(`
-// SELECT id, name, cohort_id
-// FROM students
-// LIMIT $1;`, [])
-//   .then(res => {
-//     console.log(res.rows);
-//   })
-//   .catch(err => console.error('query error', err.stack));
-
-// Using process.argv in the query
 const queryString = `
 SELECT students.id as student_id, students.name as student, cohorts.name as cohort
 FROM students
